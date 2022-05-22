@@ -12,7 +12,25 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="popup popup-1"></div>
+    <div class="popup popup-1">
+      <div class="popup__inner">
+        <div class="popup__head">공지사항</div>
+        <div class="popup__body">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis
+          animi quos laudantium, sunt earum fugiat velit provident laborum
+          officiis temporibus atque voluptatem, inventore minus dolore maxime
+          repellat saepe exercitationem officia.
+          <div class="flex justify-center mt-10px">
+            <div
+              class="btn-close"
+              onclick="$('.popup-1').removeClass('active');"
+            >
+              닫기
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="layout flex gap-30px">
       <header class="left-bar w-150px">
@@ -66,7 +84,7 @@
         </nav>
       </header>
 
-      <div class="flex-1" style="background-color: red">
+      <div class="flex-1">
         <section class="section-slider">
           <div class="slider-box-1">
             <div class="slides">
@@ -92,7 +110,102 @@
           </div>
         </section>
 
-        <section class="section-middle"></section>
+        <section class="section-middle">
+          <div class="flex gap-20px">
+            <div class="flex-1">
+              <h3>공지사항</h3>
+              <ul>
+                <li>
+                  <a
+                    href="#"
+                    onclick="$('.popup-1').addClass('active');"
+                    class="flex py-5px hover:underline hover:text-red"
+                  >
+                    <span class="font-bold mr-auto">공지사항 5</span>
+                    <span>2022-12-12</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="flex py-5px hover:underline hover:text-red"
+                  >
+                    <span class="font-bold mr-auto">공지사항 4</span>
+                    <span>2022-12-12</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="flex py-5px hover:underline hover:text-red"
+                  >
+                    <span class="font-bold mr-auto">공지사항 3</span>
+                    <span>2022-12-12</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="flex py-5px hover:underline hover:text-red"
+                  >
+                    <span class="font-bold mr-auto">공지사항 2</span>
+                    <span>2022-12-12</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="flex py-5px hover:underline hover:text-red"
+                  >
+                    <span class="font-bold mr-auto">공지사항 1</span>
+                    <span>2022-12-12</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="flex-1">
+              <h3>갤러리</h3>
+              <ul class="flex justify-between mt-60px">
+                <li>
+                  <a href="#">
+                    <img
+                      src="images/thumb_1_1.jpg"
+                      style="width: 80px"
+                      alt=""
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      src="images/thumb_1_2.jpg"
+                      style="width: 80px"
+                      alt=""
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      src="images/thumb_1_3.jpg"
+                      style="width: 80px"
+                      alt=""
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="flex-1">
+              <a href="#">
+                <img
+                  src="images/bn_3.jpg"
+                  style="width: 260px; height: 200px; object-fit: cover"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+        </section>
 
         <footer class="bottom-bar"></footer>
       </div>
