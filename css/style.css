@@ -1,0 +1,41 @@
+body,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img,
+video {
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "맑은고딕", sans-serif;
+  color: #333333;
+}
+
+.layout {
+  width: 1000px;
+}
+
+.flex {
+  display: flex;
+}
+
+.w-150px {
+  width: 150px;
+}
+
+.w-200px {
+  width: 200px;
+}
+
+.flex-1 {
+  flex: 1 1 0;
+}
