@@ -35,6 +35,14 @@ video {
   display: flex;
 }
 
+.items-center {
+  align-items: center;
+}
+
+.grayscale {
+  filter: grayscale(100%);
+}
+
 .w-150px {
   width: 150px;
 }
@@ -78,6 +86,10 @@ video {
 
 .w-100px {
   width: 100px;
+}
+
+.h-100px {
+  height: 100px;
 }
 
 .gap-10px {
@@ -211,4 +223,14 @@ body {
 
 .btn-close:active {
   transform: translateY(3 px);
+}
+
+.menu-2 > ul > li > a {
+  display: block;
+  padding: 3px;
+}
+
+.menu-2 > ul > li:hover > a {
+  color: red;
+  text-decoration: underline;
 }
