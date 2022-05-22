@@ -38,6 +38,10 @@ video {
   flex: 1 1 0;
 }
 
+.gap-30px {
+  gap: 30px;
+}
+
 .mt-10px {
   margin-top: 10px;
 }
@@ -91,4 +95,26 @@ body {
 .menu-1 ul > li:hover > ul {
   height: 174px;
   visibility: visible;
+}
+
+.slider-box-1 {
+  overflow: hidden;
+  width: 820px;
+}
+
+.slider-box-1 > .slides {
+  display: flex;
+  transition: margin-left 0.3s;
+}
+
+.slider-box-1[data-index="0"] > .slides {
+  margin-left: 0;
+}
+
+.slider-box-1[data-index="1"] > .slides {
+  margin-left: -100%;
+}
+
+.slider-box-1[data-index="2"] > .slides {
+  margin-left: -200%;
 }
